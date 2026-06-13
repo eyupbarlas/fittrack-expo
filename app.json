@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "FitTrack",
+    "slug": "fittrack-expo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "fittrack",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6366F1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eyupbarlas.fittrack",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FitTrack uses the camera to capture workout progress photos.",
+        "NSPhotoLibraryUsageDescription": "FitTrack accesses your photo library to set a profile picture or log workout photos.",
+        "NSLocationWhenInUseUsageDescription": "FitTrack uses your location to track outdoor runs and workouts.",
+        "NSMicrophoneUsageDescription": "FitTrack may use the microphone for video recordings during workouts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#6366F1"
+      },
+      "package": "com.eyupbarlas.fittrack",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        { "cameraPermission": "FitTrack uses the camera to capture workout progress photos." }
+      ],
+      [
+        "expo-image-picker",
+        { "photosPermission": "FitTrack accesses your photos to set a profile picture." }
+      ],
+      [
+        "expo-location",
+        { "locationWhenInUsePermission": "FitTrack uses location to track outdoor workouts." }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#6366F1"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

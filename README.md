@@ -4,13 +4,9 @@ A feature-rich fitness and workout tracking mobile app built with **React Native
 
 ---
 
-## 📸 Screenshots
+## 📸 Figma
 
-| Home Dashboard | Active Workout | Progress |
-|:-:|:-:|:-:|
-| _Weekly goal ring, recent workouts, streak_ | _Live timer, set tracking, exercise picker_ | _Personal records, 7-day bar chart_ |
-
-> Screenshots will be added after first build. Run the app and take them with `expo-screenshot`.
+https://www.figma.com/design/xxBnyy8NzwyOWkBfg4UjEj/FitTrack?node-id=0-1&t=WkdscnLs6dr6WUUI-1
 
 ---
 
